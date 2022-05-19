@@ -1,7 +1,7 @@
 const html404 = `<!DOCTYPE html>
 <body>
-  <h1>404 Not Found.</h1>
-  <p>The url you visit is not found.</p>
+  <h1>404 No encontrado.</h1>
+  <p>La url que busca no se encuentra.</p>
 </body>`
 
 
@@ -86,7 +86,7 @@ async function handleRequest(request) {
   console.log(path)
   if(!path){
 
-    const html= await fetch("https://cdn.jsdelivr.net/gh/terorero/Url-Shorten-By-CF-Worker@main/index.html")
+    const html= await fetch("https://cdn.jsdelivr.net/gh/la-razonbo/Acorta-Url@main/index.html")
 /****customized index.html at main branch, easier to edit it****/
     
     return new Response(await html.text(), {
